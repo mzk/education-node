@@ -1,0 +1,10 @@
+<%- include('header') -%>
+
+<% blogItems.forEach(function (item) { %>
+<div>
+    <h3><a href="/clanek/<%= item.url %>"><%= item.name %></a></h3>
+    <p><%= item.description %></p>
+</div>
+<% }) %>
+
+<%- include('footer') -%>
